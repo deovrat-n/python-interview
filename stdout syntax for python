@@ -1,0 +1,39 @@
+Single value → int(input())
+Multiple values → map(int, input().split())
+Array → list(map(int, input().split()))
+Matrix → list comprehension
+Test cases → loop on t
+
+
+checklist in interviews
+How many lines?
+Space or newline separated?
+Single test or multiple?
+Numbers or strings?
+
+
+input() → string
+Use split() for space-separated input
+Use map() for fast conversion
+
+1. Character array / string list --  chars = list(input())
+
+2. String input - s = input().strip()
+
+3.Matrix input
+n, m = map(int, input().split())
+mat = [list(map(int, input().split())) for _ in range(n)]
+
+4. Multiple test cases
+t = int(input())
+for _ in range(t):
+    n = int(input())
+
+5. Size + array
+n = int(input())
+arr = list(map(int, input().split()))
+
+6. Two / multiple numbers in one line
+a, b = map(int, input().split())
+
+
