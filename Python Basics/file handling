@@ -19,3 +19,24 @@ By looping through the lines of the file, you can read the whole file, line by l
 with open("demofile.txt") as f:
   for x in f:
     print(x)
+
+with open("demofile.txt", "w") as f:
+  f.write("Woops! I have deleted the content!")
+
+"x" - Create - will create a file, returns an error if the file exists
+
+"a" - Append - will create a file if the specified file does not exists
+
+"w" - Write - will create a file if the specified file does not exists
+"rb" → Read binary
+
+"wb" → Write binary
+
+
+import os
+os.remove("demofile.txt")
+
+if os.path.exists("demofile.txt"):
+  os.remove("demofile.txt")
+
+
