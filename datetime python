@@ -1,0 +1,32 @@
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+
+  
+  Creating Date Objects 
+  x = datetime.datetime(2020, 5, 17)
+
+  The datetime() class also takes parameters for time and timezone (hour, minute, second, microsecond, tzone), but they are optional, and has a default value of 0, (None for timezone)
+
+strftime()
+
+  %Z - Timezone
+  %f -  Microsecond 000000-999999
+  %S -  Second 00-59
+  %M -  Minute 00-59
+  %p -  AM/PM
+  %I -  Hour 00-12
+  %H - Hour 00-24
+  %Y - Year 2018
+  %y - Year 18
+  %B - Month December
+  %m - month 01-12
+  %d - day 01-31
+  
+  
+  
+  
+  
+  
+  
