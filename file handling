@@ -1,0 +1,21 @@
+f = open("demofile.txt", "rt")     f = open("demofile.txt")
+
+print(f.read())
+
+f = open("D:\\myfiles\welcome.txt")
+print(f.read())
+
+with open("demofile.txt") as f:
+  print(f.read())
+
+f = open("demofile.txt")
+print(f.readline())
+f.close()
+
+with open("demofile.txt") as f:
+  print(f.read(5))
+
+By looping through the lines of the file, you can read the whole file, line by line:
+with open("demofile.txt") as f:
+  for x in f:
+    print(x)
