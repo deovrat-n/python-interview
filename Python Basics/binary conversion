@@ -1,0 +1,19 @@
+decimal_num = 10
+binary_str = bin(decimal_num)
+print(binary_str) # Output: '0b1010'
+
+decimal_num = 10
+binary_str = format(decimal_num, 'b')
+print(binary_str) # Output: '1010'
+
+# Using f-string for a modern, compact approach
+binary_str_f = f"{decimal_num:b}"
+print(binary_str_f) # Output: '1010'
+
+# To ensure a fixed width with leading zeros (e.g., 8 bits)
+padded_binary = format(decimal_num, '08b')
+print(padded_binary) # Output: '00001010'
+
+binary_input = "1010"
+decimal_num = int(binary_input, 2)
+print(decimal_num) # Output: 10
