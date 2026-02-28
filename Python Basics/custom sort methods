@@ -51,3 +51,7 @@ print(sorted_students)
 # Output: [('john', 'A', 15), ('dave', 'B', 10), ('beta', 'B', 12), ('jane', 'B', 12)]
 ------------------------------------------------------------------------------------------
  
+Feature	        sorted()                                                      list.sort() Method
+Usage	          Works on any iterable (list, tuple, string, etc.)	               Only works on lists
+Modification	  Returns a new sorted list, leaving the original unchanged	       Sorts the list in-place and returns None
+Efficiency	    Requires more memory for the new list	                           Slightly more efficient as it modifies in-place
