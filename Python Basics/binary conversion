@@ -17,3 +17,9 @@ print(padded_binary) # Output: '00001010'
 binary_input = "1010"
 decimal_num = int(binary_input, 2)
 print(decimal_num) # Output: 10
+
+
+binary_string = "11001"
+decimal_integer = int(binary_string, 2)
+# Output: 25
+print(decimal_integer)
