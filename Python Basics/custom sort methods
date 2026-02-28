@@ -1,0 +1,53 @@
+fruits = ["banana", "apple", "cherry", "kiwi"]
+
+def sort_by_length(fruit):
+  """Returns the length of a string to be used as the sort key."""
+  return len(fruit)
+
+# Sort the list using the custom function as the key
+sorted_fruits = sorted(fruits, key=sort_by_length)
+
+print(sorted_fruits)
+# Output: ['kiwi', 'apple', 'cherry', 'banana']
+
+---------------------------------------------------------------------
+
+# Use a lambda to sor-t by length
+sorted_fruits = sorted(fruits, key=lambda fruit: len(fruit))
+
+print(sorted_fruits)
+# Output: ['kiwi', 'apple', 'cherry', 'banana']
+
+-----------------------------------------------------------------------
+  data = [
+    {"name": "Bob", "age": 30},
+    {"name": "Alice", "age": 25},
+    {"name": "Charlie", "age": 35}
+]
+
+# Sort by 'age'
+data.sort(key=lambda user: user['age'])
+print(data)
+# Output: [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 30}, {'name': 'Charlie', 'age': 35}]
+
+-----------------------------------------------------------------------------------
+
+  students = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10)]
+
+# Sort by age (the third element, index 2)
+sorted_students = sorted(students, key=lambda student: student[2])
+print(sorted_students)
+# Output: [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
+
+  ----------------------------------------------------------------------------------
+
+  Multiple Sort Criteria
+
+  students = [('john', 'A', 15), ('jane', 'B', 12), ('dave', 'B', 10), ('beta', 'B', 12)]
+
+# Sort primarily by grade (index 1), then secondarily by age (index 2)
+sorted_students = sorted(students, key=lambda student: (student[1], student[2]))
+print(sorted_students)
+# Output: [('john', 'A', 15), ('dave', 'B', 10), ('beta', 'B', 12), ('jane', 'B', 12)]
+------------------------------------------------------------------------------------------
+ 
