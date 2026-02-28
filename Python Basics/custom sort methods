@@ -55,3 +55,16 @@ Feature	        sorted()                                                      li
 Usage	          Works on any iterable (list, tuple, string, etc.)	               Only works on lists
 Modification	  Returns a new sorted list, leaving the original unchanged	       Sorts the list in-place and returns None
 Efficiency	    Requires more memory for the new list	                           Slightly more efficient as it modifies in-place
+
+-----------------------------------------------------------------------------------------
+
+from functools import cmp_to_key
+
+def custom_compare(item1, item2):
+    # Primary comparison
+    if item1['score'] != item2['score']:
+        return item2['score'] - item1['score']
+    # Tie-breaker logic for same scores
+    return (item1['name'] > item2['name']) - (item1['name'] < item2['name'])
+
+sorted_list = sorted(items, key=cmp_to_key(custom_compare))
