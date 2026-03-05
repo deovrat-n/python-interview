@@ -7,3 +7,17 @@
 | \>>      | Bitwise right shift | x>>    |
 | <<       | Bitwise left shift  | x<<    |
 
+Bitwise AND Operator
+If the bits in the compared positions of the bit patterns are 1, then the resulting bit is 1. If not, it is 0.
+Bitwise OR Operator
+if the two bits in the looked-at position are 0, the next bit is zero. If not, it is 1.
+Bitwise XOR Operator
+If the bits are different, it returns 1; otherwise, it returns 0.
+Bitwise NOT Operator
+This means it toggles all bits in the value, transforming 0 bits to 1 and 1 bits to 0
+Bitwise Right Shift
+Shifts the bits of the number to the right and fills 0 on voids left( fills 1 in the case of a negative number)
+as a result. Similar effect as of dividing the number with some power of two.
+Bitwise Left Shift
+Shifts the bits of the number to the left and fills 0 on voids right as a result. 
+Similar effect as of multiplying the number with some power of two.
