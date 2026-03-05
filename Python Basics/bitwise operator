@@ -1,0 +1,9 @@
+| Operator | Description         | Syntax |
+| -------- | ------------------- | ------ |
+| &        | Bitwise AND         | x & y  |
+| \|       | Bitwise OR          | x \| y |
+| ~        | Bitwise NOT         | ~x     |
+| ^        | Bitwise XOR         | x ^ y  |
+| \>>      | Bitwise right shift | x>>    |
+| <<       | Bitwise left shift  | x<<    |
+
