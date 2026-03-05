@@ -1,0 +1,78 @@
+heapq
+
+import heapq
+li = [25, 20, 15, 30, 40]
+
+# Convert the list into a heap
+heapq.heapify(li)
+print("Heap queue:", li)
+
+
+------------------------------------
+import heapq  
+nums = [10, 20, 15, 30, 40]  
+
+# Convert into a max-heap by inverting values  
+max_heap = [-n for n in nums]  
+heapq.heapify(max_heap)  
+
+# Access largest element (invert sign again)  
+print("Largest element:", -max_heap[0])
+
+--------------------------------------------
+import heapq
+
+# Creating an initial heap
+h = [10, 20, 15, 30, 40]
+heapq.heapify(h)
+
+# Appending an element
+heapq.heappush(h, 5)
+
+# Heap before popping
+print(h)
+
+# Pop the smallest element from the heap
+min = heapq.heappop(h)
+print("Smallest:", min)
+print(h)
+
+-------------------------------------
+Finding Largest and Smallest Elements
+While heaps are optimized for retrieving the smallest element, you may also want the 
+largest elements. Python’s nlargest() and nsmallest() functions work on any iterable, not
+just heaps. They scan efficiently and return the requested number of largest or smallest elements.
+
+import heapq
+
+# Creating a heap
+h = [10, 20, 15, 30, 40]
+heapq.heapify(h)
+
+# Find the 3 largest elements
+maxi = heapq.nlargest(3, h)
+print("3 largest elements:", maxi)
+
+# Find the 3 smallest elements
+min = heapq.nsmallest(3, h)
+print("3 smallest elements:", min)
+---------------------------------------------------------
+Example of replace and merge operations:
+import heapq
+​
+# Creating a heap
+h1 = [10, 20, 15, 30, 40]
+heapq.heapify(h1)
+​
+# Replacing the smallest element (10) with 5
+min = heapq.heapreplace(h1, 5)
+print(min)
+print(h1)
+​
+# Merging Heaps
+h2 = [2, 4, 6, 8]
+​
+# Merging the lists
+h3 = list(heapq.merge(h1, h2))
+print("Merged heap:", h3)
+---------------------------------------------------------------
