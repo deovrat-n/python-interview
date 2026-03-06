@@ -11,3 +11,53 @@ islower() / isupper(): Checks if all alphabetic characters are in lowercase or u
 isspace(): Checks if all characters are whitespace characters.
 isprintable(): Checks if all characters are printable.
 istitle(): Checks if the string follows the rules of a title (first letter of each word is uppercase, rest are lowercase)
+
+
+
+------------------------------------------
+lower(): Converts all characters in the string to lowercase
+"HELLO World".lower() # Output: "hello world"
+
+upper(): Converts all characters in the string to uppercase.
+"Hello World".upper() # Output: "HELLO WORLD"
+
+capitalize(): Converts the first character of the string to uppercase and the rest to lowercase.
+"hello world".capitalize() # Output: "Hello world"
+
+title(): Converts the first character of each word to uppercase
+"he's name is dan".title() # Output: "He'S Name Is Dan"
+
+swapcase(): Swaps the case of all characters (uppercase becomes lowercase, and vice versa).
+"Hello World".swapcase() # Output: "hELLO wORLD"
+
+find(substring): Searches for the first occurrence of the substring and returns its lowest index.
+If not found, it returns -1.
+"Hello world".find("o") # Output: 4
+
+index(substring): Similar to find(), but raises a ValueError if the substring is not found.
+
+replace(old, new): Replaces all occurrences of the old substring with the new substring.
+"hello world".replace("world", "Python") # Output: "hello Python"
+
+count(substring): Returns the number of times a specified substring occurs in the string.
+"Abracadabra".count("a") # Output: 4
+
+startswith(prefix): Returns True if the string starts with the specified prefix, otherwise False.
+
+endswith(suffix): Returns True if the string ends with the specified suffix, otherwise False.
+---------------------------------------------------------------
+Whitespace and Joining/Splitting 
+strip(): Removes any leading and trailing whitespace (or other specified characters)
+" Hello World ".strip() # Output: "Hello World"
+
+split(delimiter): Splits the string into a list of substrings based on the delimiter. 
+If no delimiter is provided, it splits on any whitespace.
+"one two three".split() # Output: ['one', 'two', 'three']
+
+join(iterable): Joins the elements of an iterable (e.g., a list of strings)
+into a single string using the string itself as the separator.
+"-".join(["2025", "05", "08"]) # Output: "2025-05-08"
+
+
+
+
