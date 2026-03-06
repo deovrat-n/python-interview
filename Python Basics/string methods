@@ -1,0 +1,13 @@
+Methods for Character Type
+These methods return True if all characters in the string meet the condition and the string is not empty;
+otherwise, they return False. To check a single character, you can iterate through the string or access it by index. 
+
+isalnum(): Checks if all characters are alphanumeric (letters or numbers).
+isalpha(): Checks if all characters are alphabetic (letters only).
+isdigit(): Checks if all characters are digits (0-9).
+isnumeric(): A broader check for numeric characters, including digits, Unicode exponents, and some fractions.
+isdecimal(): Checks for characters that are decimals (a subset of isdigit() and isnumeric()).
+islower() / isupper(): Checks if all alphabetic characters are in lowercase or uppercase, respectively.
+isspace(): Checks if all characters are whitespace characters.
+isprintable(): Checks if all characters are printable.
+istitle(): Checks if the string follows the rules of a title (first letter of each word is uppercase, rest are lowercase)
