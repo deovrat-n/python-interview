@@ -1,0 +1,9 @@
+ord(): Returns the integer (ASCII/Unicode) value for a given single character
+print(ord('A'))  # Output: 65
+print(ord('a'))  # Output: 97
+print(ord('!'))  # Output: 33
+
+chr(): Returns the character corresponding to a given integer ASCII value
+print(chr(65))   # Output: A
+print(chr(97))   # Output: a
+print(chr(33))   # Output: !
