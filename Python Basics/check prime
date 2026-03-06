@@ -1,0 +1,24 @@
+no of the form 
+6k  - 6,12,13....(divisible by 6)
+6k+1 - 7,13,19....(potential prime)
+6k+2  - 8,14,...(always divisible by 2)
+6k+3  - 9,15 ...(always divisible by 3)
+6k+5  - 11,17...(potential prime)
+
+
+we can write 6k+5 ---> 6k -1
+
+So we only need to check amomg 6k-1, 6k+1
+
+i=0 or 1 return false
+i=2 or 3 return true
+i=5  check for 5(i) and 7(i+2)
+next check for i+=6
+i=11 check for 11(i) and  13(i+2)...
+....
+...
+i = 6k-1 or 6k+1
+i*i <= n
+
+check if i % n ==0 then return false
+else return true
